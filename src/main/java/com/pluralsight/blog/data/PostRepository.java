@@ -52,7 +52,7 @@ public class PostRepository {
 
     public Post findById(Long id) {
         for (int i=0;i<ALL_POSTS.size();i++)
-            if (ALL_POSTS.get(i).equals(id))
+            if (ALL_POSTS.get(i).getId().equals(id))
                 return ALL_POSTS.get(i);
         return null;
     }

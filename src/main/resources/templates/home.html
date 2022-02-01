@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-    <h2 th:text="${title}"/>
+    <div th:each="entry : ${posts}">
+        <h2 th:text="${entry.getTitle()}"/>
+    </div>
 </body>
 </html>
